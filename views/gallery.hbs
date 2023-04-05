@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/css/style2.css">
+
+</head>
+<body>
+ 
+
+<div class="gallery">
+
+     <h1 style="color:midnightblue; text-align: center;">OUR GALLERY</h1>
+
+    <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="awards">Awards</li>
+        <li class="buttons" data-filter="infrastructure">Infrastructure</li>
+        <li class="buttons" data-filter="charity">Charity</li>
+       
+    </ul>
+
+    <div class="image-container">
+
+        <a href="/static/images/im1.jpg" class="image awards">
+            <img src="/static/images/im1.jpg" alt="">
+        </a>
+
+        <a href="/static/images/im2.png" class="image awards">
+            <img src="/static/images/im2.png" alt="">
+        </a>
+
+        <a href="/static/images/im3.jpeg" class="image awards">
+            <img src="/static/images/im3.jpeg" alt="">
+        </a>
+
+        <a href="/static/images/im4.jpeg" class="image awards">
+            <img src="/static/images/im4.jpeg" alt="">
+        </a>
+
+        <a href="/static/images/im5.jpeg" class="image awards">
+            <img src="/static/images/im5.jpeg" alt="">
+        </a>
+
+        <a href="/static/images/im6.png" class="image awards">
+            <img src="/static/images/im6.png" alt="">
+        </a>
+
+        <a href="/static/images/im7.jpg" class="image awards">
+            <img src="/static/images/im7.jpg" alt="">
+        </a>
+
+        <a href="/static/images/im8.jpg" class="image awards">
+            <img src="/static/images/im8.jpg" alt="">
+        </a>
+
+        <a href="/static/images/im9.jpg" class="image awards">
+            <img src="/static/images/im9.jpg" alt="">
+        </a>
+        <a href="/static/images/im10.jpg" class="image awards">
+            <img src="/static/images/im10.jpg" alt="">
+        </a>
+
+       
+
+        <a href="/static/images/ig1.jpg" class="image infrastructure">
+            <img src="/static/images/ig1.jpg" alt="">
+        </a>
+       <a href="/static/images/ig2.jpg" class="image infrastructure">
+            <img src="/static/images/ig2.jpg" alt="">
+        </a>
+         <a href="/static/images/ig3.jpg" class="image infrastructure">
+            <img src="/static/images/ig3.jpg" alt="">
+        </a>
+       <a href="/static/images/ig4.jpg" class="image infrastructure">
+            <img src="/static/images/ig4.jpg" alt="">
+        </a>
+      <a href="/static/images/ig5.jpg" class="image infrastructure">
+            <img src="/static/images/ig5.jpg" alt="">
+        </a>
+     <a href="/static/images/ig6.png" class="image infrastructure">
+            <img src="/static/images/ig6.png" alt="">
+        </a>
+     <a href="/static/images/ig7.jpg" class="image infrastructure">
+            <img src="/static/images/ig7.jpg" alt="">
+        </a>
+    <a href="/static/images/ig8.jpg" class="image infrastructure">
+            <img src="/static/images/ig8.jpg" alt="">
+        </a>
+    <a href="/static/images/ig9.webp" class="image infrastructure">
+            <img src="/static/images/ig9.webp" alt="">
+        </a>
+    <a href="/static/images/ig10.jpg" class="image infrastructure">
+            <img src="/static/images/ig10.jpg" alt="">
+        </a>
+      
+
+     <a href="/static/images/in1.jfif" class="image charity">
+            <img src="/static/images/in1.jfif" alt="">
+        </a>
+     <a href="/static/images/in2.png" class="image charity">
+            <img src="/static/images/in2.png" alt="">
+        </a>
+     <a href="/static/images/in3.jpeg" class="image charity">
+            <img src="/static/images/in3.jpeg" alt="">
+        </a>
+     <a href="/static/images/in4.jpg" class="image charity">
+            <img src="/static/images/in4.jpg" alt="">
+        </a>
+     <a href="/static/images/in5.jpg" class="image charity">
+            <img src="/static/images/in5.jpg" alt="">
+        </a>
+     <a href="/static/images/in6.webp" class="image charity">
+            <img src="/static/images/in6.webp" alt="">
+        </a>
+     <a href="/static/images/in7.jpg" class="image charity">
+            <img src="/static/images/in7.jpg" alt="">
+        </a>
+     <a href="/static/images/in8.jpg" class="image charity">
+            <img src="/static/images/in8.jpg" alt="">
+        </a>
+     <a href="/static/images/in9.jpg" class="image charity">
+            <img src="/static/images/in9.jpg" alt="">
+        </a>
+      <a href="/static/images/in10.jpg" class="image charity">
+            <img src="/static/images/in10.jpg" alt="">
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(400);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(400);
+        }
+
+    });
+
+    $('.gallery').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+</script>
+    
+</body>
+</html>

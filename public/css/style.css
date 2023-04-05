@@ -1,0 +1,70 @@
+.back_ground{
+     background-image: linear-gradient(
+  160deg,
+  hsl(270deg 100% 7%) 0%,
+  hsl(223deg 59% 24%) 35%,
+  hsl(175deg 32% 48%) 49%,
+  hsl(128deg 45% 78%) 58%,
+  hsl(116deg 60% 85%) 64%,
+  hsl(140deg 45% 68%) 68%,
+  hsl(165deg 39% 53%) 71%,
+  hsl(189deg 52% 39%) 74%,
+  hsl(194deg 40% 49%) 76%,
+  hsl(199deg 43% 59%) 78%,
+  hsl(204deg 51% 71%) 80%,
+  hsl(218deg 48% 67%) 82%,
+  hsl(241deg 39% 49%) 85%,
+  hsl(264deg 59% 33%) 89%,
+  hsl(287deg 87% 21%) 100%
+);
+}
+.nav_header{
+     background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.slider-image{
+     height: 600px!important;
+     object-fit:cover;
+}
+.banner_bg{
+     background: #FFEEEE;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+     
+     
+}
+.service_icon{
+    font-size: 110px;
+
+}
+.card_bg{
+     border-style: inset;
+     border-color:steelblue;
+     border-width:7px;
+     background-color:rgb(208, 230, 249)
+    
+}
+
+   
+.bg-images{
+     background-image: url(img5.jpg);
+     background-size: 100%;
+     
+    
+
+}
+.bg-color{
+     background: #FFEEEE;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.contact_form{
+     padding-bottom: 20px;
+     
+}
+.banner_a{
+    background-size: 15%;
+     
+}

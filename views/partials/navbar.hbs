@@ -1,0 +1,28 @@
+<nav class="navbar ms-auto navbar-expand-lg py-3 navbar-light  nav_header">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="dark" class="bi bi-p-square-fill" viewBox="0 0 16 16">
+  <path d="M8.27 8.074c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97H8.27Z"/>
+  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm3.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5V4.002Z"/>
+</svg>
+
+     {{data.brandName}} </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+       
+        {{#each data.links}} 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href= "{{this.url}}">{{this.label}}</a>
+        </li>
+         
+        {{/each}}
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
